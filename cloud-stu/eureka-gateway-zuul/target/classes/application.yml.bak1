@@ -1,0 +1,13 @@
+server:
+  port: 8999
+spring:
+  application:
+    name: eureka-gateway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+zuul:
+  ignoredServices: '*'
+  routes:
+    user-client: /user/**

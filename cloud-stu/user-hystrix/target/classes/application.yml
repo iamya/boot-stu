@@ -1,0 +1,9 @@
+server:
+  port: 9101
+spring:
+  application:
+    name: user-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/

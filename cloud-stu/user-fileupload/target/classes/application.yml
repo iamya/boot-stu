@@ -1,0 +1,13 @@
+server:
+  port: 7111
+spring:
+  application:
+    name: user-fileupload
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+http:
+  multipart:
+    max-file-size: 2000Mb      # Max file size，默认1M
+    max-request-size: 2500Mb   # Max request size，默认10M

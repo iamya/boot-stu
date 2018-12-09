@@ -1,0 +1,8 @@
+说明:
+
+1.本例只要演示feign的复写默认配置.
+自定义一个configuration文件,然后在里面实例化一个feign,就可以指定请求规则,默认是使用
+springmvc注解,本例中使用的是feign自带的注解(一般也不会使用)
+需要注意的是configuration文件不能被@component注解扫描到,如果被扫描到,则所有的feign都将
+会按照该configuration文件中的实例化规则生产实例,不能做到分别配置.
+ribbon的自定义配置也是如此,不在演示.
